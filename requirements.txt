@@ -1,0 +1,12 @@
+jiwer
+evaluate
+editdistance
+bitsandbytes 
+peft 
+trl 
+qwen-vl-utils[decord]==0.0.8
+tesseract
+transformers
+torch>=2.0.0
+torchvision
+torchtext
