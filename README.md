@@ -28,9 +28,11 @@ qwen2.5vl-ocr-finetune/
 │   ├── finetuned_layout_eval_output.txt
 │   ├── pre-train_CER_WER_output.txt
 │   ├── pre-trained_layout_eval_output.txt
-│   ├── enhanced_pre-train_CER_WER_output.txt         # Results on GAN Enhanced images
-│   └── enhanced_pre-trained_layout_eval_output.txt    # Results on GAN Enhanced images
-│
+│   ├── enhanced_pre-train_CER_WER_output.txt         # Results on GAN Enhanced images with pre-trained model
+│   └── enhanced_pre-trained_layout_eval_output.txt    # Results on GAN Enhanced images with pre-trained model
+│   ├── enhanced_finetune_CER_WER_output.txt         # Results on GAN Enhanced images with finetuned model
+│   └── enhanced_finetune_layout_eval_output.txt    # Results on GAN Enhanced images with finetuned model
+|
 ├── model_weight/
 │   └── qwen-2-5-vl-3b-checkpoint-1350
 │

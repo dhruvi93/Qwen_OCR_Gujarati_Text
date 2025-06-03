@@ -2,8 +2,8 @@
 import json
 
 # Load raw JSON
-input_path = "/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_inference_data/pretrained_qwen_enhanced_inference_results.json"
-output_path = "/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_inference_data/processed_pretrained_qwen_enhanced_inference_results.json"
+input_path = "/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_inference_data/finetuned_qwen_inference_enhanced_results.json"
+output_path = "/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_inference_data/processed_finetuned_qwen_inference_enhanced_results.json"
 
 with open(input_path, "r", encoding="utf-8") as f:
     data = json.load(f)

@@ -33,7 +33,7 @@ def layout_aware_accuracy(actual, predicted, weight_line=0.7, weight_struct=0.3)
     return weight_line * line_acc + weight_struct * struct_acc
 
 # Load cleaned predictions
-with open("/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_inference_data/processed_pretrained_qwen_enhanced_inference_results.json", "r", encoding="utf-8") as f:
+with open("/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_inference_data/enhanced/processed_finetuned_qwen_inference_enhanced_results.json", "r", encoding="utf-8") as f:
     results = json.load(f)
 
 layout_scores = []
