@@ -2,7 +2,7 @@ import json
 import re
 
 # Load the raw inference results
-with open('/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_project_data/finetuned_qwen_inference_results.json', 'r', encoding='utf-8') as f:
+with open('/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_inference_data/pretrained_qwen_enhanced_inference_results.json', 'r', encoding='utf-8') as f:
     raw_data = json.load(f)
 
 cleaned_results = []
@@ -23,7 +23,7 @@ for item in raw_data:
     })
 
 # Save to a new cleaned JSON file
-with open('/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_project_data/processed_finetuned_qwen_inference_results.json', 'w', encoding='utf-8') as f:
+with open('/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_inference_data/processed_pretrained_qwen_enhanced_inference_results.json', 'w', encoding='utf-8') as f:
     json.dump(cleaned_results, f, ensure_ascii=False, indent=2)
 
 print("processed predictions saved")

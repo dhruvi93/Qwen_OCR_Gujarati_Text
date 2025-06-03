@@ -9,29 +9,45 @@ This project demonstrates how to fine-tune the Qwen-2.5-VL-3B vision-language mo
 ```
 qwen2.5vl-ocr-finetune/
 │
-├── fine-tune_Qwen-2.5-VL-3B_OCR.ipynb   # Main notebook for all steps
-├── requirements.txt                     # Python dependencies
-├── README.md                            # This file
+├── fine-tune_Qwen-2.5-VL-3B_OCR.ipynb        # Main notebook for all steps
+├── requirements.txt                          # Python dependencies
+├── README.md                                 # This file
 │
 ├── data/
-│   ├── assigned_dataset/                # Provided dataset. binarized folder has enhanced images
-│   ├── combined_dataset/                # Combined data of provided and roboflow open-source data
-│   └── roboflow_dataset/                # Roboflow data
+│   ├── assigned_dataset/                     # Provided dataset. 'binarized' folder has enhanced images
+│   ├── combined_dataset/                     # Combined data of provided and roboflow open-source data
+│   └── roboflow_dataset/                     # Roboflow data
 │
 ├── scripts/
-│   ├── infer_finetuned_qwen_vl_3b.py    # Inference script for fine-tuned model
-│   └── infer_pretrained_qwen_vl_3b.py   # Inference script for pretrained model
-│
+│   ├── infer_finetuned_qwen_vl_3b.py         # Inference script for fine-tuned model
+│   └── infer_pretrained_qwen_vl_3b.py        # Inference script for pretrained model
+│   |-------------                            # few other processing scripts
+|   |                                        
 ├── metrics_outputs/
 │   ├── fine-tune_CER_WER_output.txt
 │   ├── finetuned_layout_eval_output.txt
-│   ├── pre-train_output_CER_WER_output.txt
-│   └── pre-trained_layout_eval_output.txt
+│   ├── pre-train_CER_WER_output.txt
+│   ├── pre-trained_layout_eval_output.txt
+│   ├── enhanced_pre-train_CER_WER_output.txt         # Results on GAN Enhanced images
+│   └── enhanced_pre-trained_layout_eval_output.txt    # Results on GAN Enhanced images
 │
 ├── model_weight/
-│   ├── qwen-2-5-vl-3b-checkpoint-1350
+│   └── qwen-2-5-vl-3b-checkpoint-1350
 │
-└── DE-GAN/                              # (Optional) Image enhancement GAN
+├── OCR_inference_data/
+│   ├── pretrained/
+│   │   ├── pretrained_qwen_inference_results.json
+│   │   ├── pretrained_qwen_enhanced_inference_results.json
+│   │   └── processed_pretrained_qwen_inference_results.json
+│   ├── finetuned/
+│   │   ├── finetuned_qwen_inference_results.json
+│   │   ├── finetuned_qwen_enhanced_inference_results.json
+│   │   └── processed_finetuned_qwen_inference_results.json
+│   └── enhanced/
+│       ├── enhanced_pretrained_qwen_inference_results.json
+│       └── enhanced_finetuned_qwen_inference_results.json
+│
+└── DE-GAN/                                   # (Optional) Image enhancement GAN
 ```
 
 ---

@@ -5,7 +5,7 @@ from evaluate import load
 cer = load("cer")
 
 # Load the cleaned inference results
-with open("/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_project_data/processed_pretrained_qwen_inference_results.json", "r", encoding="utf-8") as f:
+with open("/home/dhruvi/Simform/learning_project/qwen2.5vl-ocr-finetune/OCR_inference_data/processed_pretrained_qwen_enhanced_inference_results.json", "r", encoding="utf-8") as f:
     results = json.load(f)
 
 total_wer = 0
