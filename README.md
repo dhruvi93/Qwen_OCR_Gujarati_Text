@@ -91,7 +91,8 @@ qwen2.5vl-ocr-finetune/
     ```json
     {"image": "combined_dataset/images/Swarupsannidhan_0001.png", "text": "Gujarati ground truth text"}
     ```
-
+  - Dataset stats:
+      Total Number of images-text pairs: 504 
 ---
 
 ## Data Formatting
@@ -115,6 +116,7 @@ qwen2.5vl-ocr-finetune/
    ```
 
 ---
+
 
 ## Fine-Tuning Qwen-2.5-VL-3B
 
