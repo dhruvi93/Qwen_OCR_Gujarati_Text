@@ -189,7 +189,8 @@ qwen2.5vl-ocr-finetune/
 
 5. **Prepare data collator and trainer:**
    - Use a custom collate function to batch images and texts.
-   - Use `trl.SFTTrainer` or HuggingFace `Seq2SeqTrainer` for training.
+   - Use `peft`s methons like `LoRA` for to prepare a model for training on constrained compute resources.
+   - Use `trl.SFTTrainer` for training.
 
 6. **Start training:**
    ```python
